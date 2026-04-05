@@ -60,6 +60,7 @@ cat > ~/.config/swaync/colors.css << EOF
 @define-color gray1 ${color8};
 @define-color gray2 ${color8};
 EOF
+swaync-client -R
 
 pkill swaync; sleep 0.5 && swaync &
 
@@ -109,16 +110,18 @@ button:focus, button:active, button:hover {
 EOF
 
 # Update starship colors
-source ~/.cache/wal/colors.sh
-sed -i "s/color_bg1 = \".*\"/color_bg1 = \"${color1}\"/" ~/.config/starship.toml
-sed -i "s/color_bg2 = \".*\"/color_bg2 = \"${color2}\"/" ~/.config/starship.toml
-sed -i "s/color_bg3 = \".*\"/color_bg3 = \"${color3}\"/" ~/.config/starship.toml
-sed -i "s/color_bg4 = \".*\"/color_bg4 = \"${color4}\"/" ~/.config/starship.toml
-sed -i "s/color_bg5 = \".*\"/color_bg5 = \"${color0}\"/" ~/.config/starship.toml
-sed -i "s/color_blue = \".*\"/color_blue = \"${color4}\"/" ~/.config/starship.toml
-sed -i "s/color_gray = \".*\"/color_gray = \"${color8}\"/" ~/.config/starship.toml
-sed -i "s/color_red = \".*\"/color_red = \"${color1}\"/" ~/.config/starship.toml
-sed -i "s/color_white = \".*\"/color_white = \"${foreground}\"/" ~/.config/starship.toml
+cat > ~/.config/starship-colors.toml << EOF
+[palettes.ccswe_dark]
+color_bg1 = "${color1}"
+color_bg2 = "${color2}"
+color_bg3 = "${color3}"
+color_bg4 = "${color4}"
+color_bg5 = "${color0}"
+color_blue = "${color4}"
+color_gray = "${color8}"
+color_red = "${color1}"
+color_white = "${foreground}"
+EOF
 
 sleep 0.3
 pkill waybar && waybar &
