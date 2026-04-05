@@ -7,10 +7,10 @@ window {
 }
 button {
     border-radius: 12px;
-    border-color: #08090B;
-    text-decoration-color: #f1dfe2;
-    color: #f1dfe2;
-    background-color: #08090B;
+    border-color: #0D0518;
+    text-decoration-color: #f3c4f5;
+    color: #f3c4f5;
+    background-color: #0D0518;
     border-style: solid;
     border-width: 1px;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ button {
     background-size: 25%;
 }
 button:focus, button:active, button:hover {
-    background-color: #C35995;
+    background-color: #8C2C8F;
     outline-style: none;
 }
 #lock {
