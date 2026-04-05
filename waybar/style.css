@@ -56,3 +56,23 @@ window#waybar {
     background: transparent;
 }
 
+#tray {
+    background-color: @bg0;
+    border-radius: 99px;
+    padding: 2px 8px;
+    margin: 3px 0;
+}
+
+menu {
+    background-color: @bg0; /* Change to your preferred background color */           /* Change to your preferred text color */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+menuitem {
+    padding: 5px 10px;
+}
+
+menuitem:hover {
+    background-color: @surface /* Background when hovering over menu items */
+}
