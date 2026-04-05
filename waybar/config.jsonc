@@ -1,0 +1,89 @@
+{
+    "layer": "top",
+    "spacing": 18,
+    "margin-top": 20,
+    "modules-center": [
+        "custom/arch",
+        "clock",
+        "hyprland/workspaces",
+        "tray",
+        "pulseaudio",
+        "network"
+    ],
+    "custom/arch": {
+        "format": "󰣇",
+        "tooltip": false
+    },
+    "clock": {
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "\uf192",
+            "default": "\uf111"
+        },
+        "persistent-workspaces": {
+            "DP-2": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "DP-3": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    },
+    "pulseaudio": {
+        "format": "{volume}%  {icon}",
+        "format-bluetooth": "{volume}%  󰂯",
+        "format-muted": "Muted  ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "phone-muted": "󰷯",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10,
+        "icons": {
+            "blueman": "bluetooth",
+            "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+        }
+    },
+    "network": {
+        "interface": "enp6s0",
+        "format": "{ifname}",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰈂",
+        "tooltip-format": "{ifname} via {gwaddr} 󰈀",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    }
+}
