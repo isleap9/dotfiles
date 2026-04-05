@@ -56,6 +56,8 @@ window#waybar {
     background: transparent;
 }
 
+
+
 #tray {
     background-color: @bg0;
     border-radius: 99px;
@@ -67,6 +69,7 @@ menu {
     background-color: @bg0; /* Change to your preferred background color */           /* Change to your preferred text color */
     border-radius: 5px;
     padding: 5px;
+    border-radius: 10px;
 }
 
 menuitem {
