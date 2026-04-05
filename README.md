@@ -6,7 +6,8 @@ A Hyprland rice with dynamic wallpaper-driven theming via pywal, centered island
 
 ## 📸 Preview
 
-![Desktop](screenshots/1.png)
+> Add your screenshots here!
+
 ---
 
 ## 🖥️ System Info
@@ -22,6 +23,7 @@ A Hyprland rice with dynamic wallpaper-driven theming via pywal, centered island
 | **Notifications** | Swaync |
 | **Wallpaper** | Waypaper + awww |
 | **Theming** | pywal |
+| **Cursor** | Bibata-Modern-Ice |
 | **GPU** | NVIDIA (nvidia-open-dkms) |
 
 ---
@@ -72,6 +74,11 @@ wireplumber pavucontrol libpulse
 ### 📡 Bluetooth & Network
 ```
 bluez bluez-utils network-manager-applet networkmanager
+```
+
+### 🖱️ Cursor
+```
+bibata-cursor-theme
 ```
 
 ### 🛠️ Utilities
@@ -136,6 +143,7 @@ cp -r ~/dotfiles/kitty ~/.config/
 cp -r ~/dotfiles/swaync ~/.config/
 cp -r ~/dotfiles/matugen ~/.config/
 cp -r ~/dotfiles/waypaper ~/.config/
+cp -r ~/dotfiles/wlogout ~/.config/
 ```
 
 3. Install packages (see above) with `yay`.
@@ -159,5 +167,6 @@ dotfiles/
 ├── kitty/         # Kitty terminal config
 ├── swaync/        # Swaync notification center
 ├── matugen/       # Matugen templates
-└── waypaper/      # Waypaper config
+├── waypaper/      # Waypaper config
+└── wlogout/       # Wlogout logout screen
 ```
