@@ -63,3 +63,6 @@ EOF
 swaync-client -R
 
 pkill swaync; sleep 0.5 && swaync &
+
+sleep 0.3
+pkill waybar && waybar &
