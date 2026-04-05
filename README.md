@@ -6,7 +6,7 @@ A Hyprland rice with dynamic wallpaper-driven theming via pywal, centered island
 
 ## 📸 Preview
 
-> Add your screenshots here!
+![Desktop](screenshots/1.png)
 
 ---
 
