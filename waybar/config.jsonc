@@ -29,8 +29,20 @@
             "default": "\uf111"
         },
         "persistent-workspaces": {
-            "DP-2": [1, 2, 3, 4, 5],
-            "DP-3": [1, 2, 3, 4, 5]
+            "DP-2": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "DP-3": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
         }
     },
     "mpris": {
@@ -65,20 +77,26 @@
     "pulseaudio": {
         "format": "{volume}%  {icon}",
         "format-bluetooth": "{volume}%  󰂯",
-        "format-muted": "Muted  ",
+        "format-muted": "Muted  ",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "󰏲",
             "phone-muted": "󰷯",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+            "portable": "󰏲",
+            "car": "󰄋",
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ]
         },
         "scroll-step": 1,
         "on-click": "pavucontrol",
-        "ignored-sinks": ["Easy Effects Sink"]
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
     },
     "network": {
         "interface": "enp6s0",
