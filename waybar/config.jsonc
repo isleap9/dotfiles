@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "spacing": 18,
-    "margin-top": 20,
+    "margin-top": 16,
     "modules-center": [
         "custom/arch",
         "clock",
