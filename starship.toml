@@ -27,15 +27,15 @@ $cmd_duration\
 palette = "ccswe_dark"
 
 [palettes.ccswe_dark]
-color_bg1 = "#7F7E83"
-color_bg2 = "#A69E94"
-color_bg3 = "#C4B8AA"
-color_bg4 = "#BCC0B7"
-color_bg5 = "#121110"
-color_blue = "#BCC0B7"
-color_gray = "#a3a29c"
-color_red = "#7F7E83"
-color_white = "#eae8df"
+color_bg1 = "#536E99"
+color_bg2 = "#C35995"
+color_bg3 = "#6290B0"
+color_bg4 = "#66ADCC"
+color_bg5 = "#08090B"
+color_blue = "#66ADCC"
+color_gray = "#a89c9e"
+color_red = "#536E99"
+color_white = "#f1dfe2"
 
 [character]
 error_symbol = "[❯](bold color_red)"
