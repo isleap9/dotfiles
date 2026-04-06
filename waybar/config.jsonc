@@ -25,7 +25,7 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "active": "\uf192",
+            "active": "\uebb4",
             "default": "\uebb4"
         },
         "persistent-workspaces": {
@@ -71,8 +71,8 @@
     },
     "hyprland/language": {
         "format": "\udb80\udf0c  {}",
-        "format-en": "GB",
-        "format-it(it)": "IT"
+        "format-en": "UK",
+        "format-it": "IT"
     },
     "pulseaudio": {
         "format": "{volume}%  {icon}",
