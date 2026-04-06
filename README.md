@@ -12,8 +12,6 @@ A Hyprland rice with dynamic wallpaper-driven theming via pywal, centered island
 |---|---|
 | **OS** | Arch Linux |
 | **WM** | Hyprland |
-| **Secondary DE** | KDE Plasma (gaming) |
-| **Display Manager** | SDDM |
 | **Bar** | Waybar |
 | **Terminal** | Kitty |
 | **Shell** | Zsh |
@@ -29,10 +27,6 @@ A Hyprland rice with dynamic wallpaper-driven theming via pywal, centered island
 ### 🪟 Hyprland & WM
 ```
 hyprland polkit-kde-agent hyprshot
-```
-### 🖥️ KDE Plasma (Gaming)
-```
-plasma kde-applications sddm kwalletmanager kwallet-pam
 ```
 ### 📊 Bar & Notifications
 ```
@@ -130,16 +124,12 @@ cp -r ~/dotfiles/qt6ct ~/.config/
 mkdir -p ~/.local/share/color-schemes
 cp ~/dotfiles/pywal.colors ~/.local/share/color-schemes/
 ```
-3. Install packages (see above) with `paru`.
-4. Enable SDDM:
-```bash
-sudo systemctl enable sddm
-```
-5. Make wallpaper script executable:
+3. Install packages (see above) with `yay`.
+4. Make wallpaper script executable:
 ```bash
 chmod +x ~/.config/hypr/scripts/wallpaper.sh
 ```
-6. Log into Hyprland and select a wallpaper with Waypaper to generate your theme.
+5. Log into Hyprland and select a wallpaper with Waypaper to generate your theme.
 ---
 ## 📁 Structure
 ```
