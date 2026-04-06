@@ -78,4 +78,5 @@ menuitem {
 
 menuitem:hover {
     background-color: @surface /* Background when hovering over menu items */
+    
 }

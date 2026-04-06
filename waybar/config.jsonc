@@ -25,8 +25,8 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "active": "\uf111",
-            "default": "\uf111"
+            "active": "\uf192",
+            "default": "\uebb4"
         },
         "persistent-workspaces": {
             "DP-2": [

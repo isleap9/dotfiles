@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 echo "Wallpaper: $1" >> /tmp/wallpaper.log
 awww img "$1"
+# Update rofi wallpaper - crop to portrait
+magick "$1" -resize x600 ~/.config/rofi/images/a.png
+sed -i "s|url(\".*\", .*)|url(\"$HOME/.config/rofi/images/a.png\", height)|" ~/.config/rofi/style-1.rasi
 wal -i "$1" -n -q
 # Generate waybar colors.css from pywal
 source ~/.cache/wal/colors.sh
