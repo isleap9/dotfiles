@@ -4,9 +4,9 @@
     "margin-top": 16,
     "modules-center": [
         "custom/arch",
+        "custom/weather",
         "clock",
         "hyprland/workspaces",
-        "mpris",
         "tray",
         "hyprland/language",
         "pulseaudio",
@@ -17,10 +17,37 @@
         "format": "󰣇",
         "tooltip": false
     },
+    "custom/weather": {
+        "exec": "python ~/.config/waybar/scripts/weather.py",
+        "restart-interval": 300,
+        "return-type": "json",
+        "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"
+        // "format-alt": "{alt}",
+    },
     "clock": {
-        "interval": 60,
-        "format": "{:%H:%M}",
-        "tooltip": false
+        "format": "{:%I:%M %p}   ",
+        "format-alt": "{:%A, %B %d, %Y (%R)} \uf4c3 ",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-scroll-up": "tz_up",
+                    "on-scroll-down": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
     },
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -43,22 +70,6 @@
                 4,
                 5
             ]
-        }
-    },
-    "mpris": {
-        "format": "{player_icon} {status_icon} <i>{artist} - {title}</i>",
-        "player": "playerctld",
-        "max-length": 50,
-        "on-click": "playerctl play-pause",
-        "format-paused": "{player_icon} {status_icon} {artist} - {title}",
-        "player-icons": {
-            "default": "",
-            "spotify": " ",
-            "mpv": " "
-        },
-        "status-icons": {
-            "paused": "⏸",
-            "playing": "▶"
         }
     },
     "tray": {
