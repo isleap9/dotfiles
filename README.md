@@ -1,3 +1,5 @@
+i don't maintain this dotfiles anymore, check my new ones https://github.com/isleap9/isleap-dotfiles
+
 # 🌸 isleap's dotfiles
 A Hyprland rice with dynamic wallpaper-driven theming via pywal, centered island Waybar, and a clean minimal aesthetic.
 ---
